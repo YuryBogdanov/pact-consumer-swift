@@ -26,6 +26,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks   = 'XCTest'
 
+  s.xcconfig = { 'BITCODE_ENABLED' => 'NO' }
+
   s.dependency 'Alamofire', '~> 4.7'
   s.dependency 'BrightFutures', '~> 7.0'
   s.dependency 'Nimble', '~> 7.3'
